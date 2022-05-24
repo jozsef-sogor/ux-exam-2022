@@ -1,0 +1,85 @@
+
+@import "../abstracts/breakpoints";
+$grid__cols: 12;
+
+$map-grid-props: (
+        '': 0,
+        '-sm': $breakpoint-sm,
+        '-md': $breakpoint-md,
+        '-lg': $breakpoint-lg,
+        '-xl': $breakpoint-xl
+);
+
+//Creates media queries based on breakpoint (pixel value)
+//$breakpoint: a breakpoint in pixels
+//$min-or-max: controls if the resulting media query will use min-width or max-width
+@mixin create-media-queries($breakpoint, $min-or-max) {
+  @if($breakpoint == 0) {
+    @content;
+  } @else {
+    @media screen and (#{$min-or-max}-width: $breakpoint *1px) {
+      @content;
+    }
+  }
+}
+
+//Creates the classes to be used in HTML for the grid system
+//$modifier: number, how many columns the class should take up. Example result: __col-3
+//$breakpoint: a breakpoint in pixels
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+  @include create-media-queries($breakpoint, 'min') {
+    &__col#{$modifier}-offset-0 {
+      margin-left: 0;
+    }
+    @for $i from 1 through $grid-cols {
+      &__col#{$modifier}-#{$i} {
+        flex-basis: (100 / ($grid-cols / $i) ) * 1%;
+      }
+      &__col#{$modifier}-offset-#{$i} {
+        margin-left: (100 / ($grid-cols / $i) ) * 1%;
+      }
+    }
+  }
+}
+
+//Looping through the $map-grid-props map (from the top of the file)
+//the left side of the map value us the $modifier and the right side is te $breakpoint
+//e.g.: in case of '-sm': $grid__bp-sm, '-sm' is the $modifier and $grid__bp-sm is the breakpoint
+@each $modifier , $breakpoint in $map-grid-props {
+    //if no modifier deafult to xs (mobile-first)
+  @if($modifier == '') {
+    $modifier: '-xs';
+  }
+  //using the previously defined mixin to create the media query for hiding classes
+  @include create-media-queries($breakpoint - 1, 'max') {
+    .hidden#{$modifier}-down {
+      display: none !important;
+    }
+  }
+  @include create-media-queries($breakpoint, 'min') {
+    .hidden#{$modifier}-up {
+      display: none !important;
+    }
+  }
+}
+
+.container {
+  max-width: $breakpoint-md * 1px;
+  margin: 0 auto;
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  //Looping through the $map-grid-props map (from the top of the file)
+  //the left side of the map value us the $modifier and the right side is te $breakpoint
+  //e.g.: in case of '-sm': $grid__bp-sm, '-sm' is the $modifier and $grid__bp-sm is the breakpoint
+  @each $modifier , $breakpoint in $map-grid-props {
+    //Using previously created mixin to create the column classes
+    @include create-col-classes($modifier, $grid__cols, $breakpoint);
+  }
+}

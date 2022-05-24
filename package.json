@@ -1,0 +1,22 @@
+{
+  "name": "ux-exam-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss:css/main.css scss/pages:css/pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jozsef-sogor/ux-exam-2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jozsef-sogor/ux-exam-2022/issues"
+  },
+  "homepage": "https://github.com/jozsef-sogor/ux-exam-2022#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,17 @@
+@import "breakpoints";
+
+@mixin for-tablet-up {
+    @media only screen and (min-width: $breakpoint-sm) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+    @media only screen and (min-width: $breakpoint-md) { @content; }
+}
+
+@mixin for-small-desktop-up {
+    @media only screen and (min-width: $breakpoint-lg) { @content; }
+}
+
+@mixin for-desktop-up {
+    @media only screen and (min-width: $breakpoint-xl) { @content; }
+}
