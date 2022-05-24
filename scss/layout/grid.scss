@@ -54,11 +54,13 @@ $map-grid-props: (
   }
   //using the previously defined mixin to create the media query for hiding classes
   @include create-media-queries($breakpoint - 1, 'max') {
+    //Hidden from breakpoint downwards
     .hidden#{$modifier}-down {
       display: none !important;
     }
   }
   @include create-media-queries($breakpoint, 'min') {
+    //Hidden from breakpoint upwards
     .hidden#{$modifier}-up {
       display: none !important;
     }
