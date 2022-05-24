@@ -1,10 +1,18 @@
 @import "breakpoints";
 
-@mixin for-tablet-up {
+//Mixins to prevent code duplication
+//Commonly used css blocks collected together
+//Use like this:
+//@include [name-of-mixin] e.g.:@include for-tablet-up {}
+
+//Media queries for styling based on screen width 
+//(for creating layouts use the grid classes)
+//Can be used inside class block e.g.: .button { @include for-tablet-up }
+@mixin for-small-tablet-up {
     @media only screen and (min-width: $breakpoint-sm) { @content; }
 }
 
-@mixin for-tablet-landscape-up {
+@mixin for-tablet-up {
     @media only screen and (min-width: $breakpoint-md) { @content; }
 }
 
@@ -14,4 +22,18 @@
 
 @mixin for-desktop-up {
     @media only screen and (min-width: $breakpoint-xl) { @content; }
+}
+
+//Helper mixins
+@mixin flex-center-vertical-horzintal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pos-absolute-center-vertical-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
