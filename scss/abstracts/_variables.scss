@@ -1,7 +1,19 @@
 //Colors
-
 $color-accent: #BDD172;
 $color-highlight: #F7D0B5;
 $color-light: #F4F1E7;
 $color-white: #fcfcfc;
 $color-black: #000000;
+
+//Sizing
+$spacing-xxs: .25rem;
+$spacing-xs: .5rem;
+$spacing-s: .75rem;
+$spacing-m: 1rem;
+$spacing-l: 1.25rem;
+$spacing-xl: 1.5rem;
+$spacing-xxl: 2rem;
+$spacing-xxxl: 3rem;
+
+//Shadows
+$shadow-small: 0 0 5px 1px rgba(0,0,0,0.25);
