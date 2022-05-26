@@ -1,0 +1,106 @@
+@import "../abstracts/breakpoints";
+
+
+//$breakpoint-sm: 575;
+//$breakpoint-md: 765;
+//$breakpoint-lg: 990;
+//$breakpoint-xl: 1200;
+
+$breakpoints: (
+    s: $breakpoint-sm,
+    m : $breakpoint-md,
+    l: $breakpoint-lg,
+    xl : $breakpoint-xl
+);
+
+$body-font-sizes: (
+  null  : 16px,
+  s : 18px,
+  m: 20px,
+  l : 22px,
+  xl: 24px
+);
+
+$h1-font-sizes: (
+  null  : 32px,
+  s : 38px,
+  m: 40px,
+  l : 42px,
+  xl: 48px
+);
+
+$h2-font-sizes: (
+  null  : 28px,
+  s : 30px,
+  m: 32px,
+  l : 36px,
+  xl: 42px
+);
+
+$h3-font-sizes: (
+  null  : 24px,
+  s : 28px,
+  m: 30px,
+  l : 32px,
+  xl: 38px
+);
+
+$h4-font-sizes: (
+  null  : 20px,
+  s : 22px,
+  m: 24px,
+  l : 28px,
+  xl: 32px
+);
+
+$h5-h6-font-sizes: (
+  null  : 18px,
+  s : 20px,
+  m: 22px,
+  l : 24px,
+  xl: 28px
+);
+
+
+@mixin font-size($font-sizes-map, $breakpoints: $breakpoints) {
+    @each $breakpoint, $fs-font-size in $font-sizes-map {
+      @if $breakpoint == null {
+        font-size: $fs-font-size;
+      }
+      @else {
+        // If $fs-font-size is a key that exists in
+        // $fs-breakpoints, use the value
+        @if map-has-key($breakpoints, $breakpoint) {
+          $breakpoint: map-get($breakpoints, $breakpoint);
+        }
+        @media screen and (min-width: $breakpoint) {
+          font-size: $fs-font-size;
+        }
+      }
+    }
+  }
+
+
+  h1 {
+    @include font-size($h1-font-sizes);
+  }
+
+  h2 {
+    @include font-size($h2-font-sizes);
+  }
+
+  h3 {
+    @include font-size($h3-font-sizes);
+  }
+
+  h4 {
+    @include font-size($h4-font-sizes);
+  }
+
+  h5, h6 {
+    @include font-size($h5-h6-font-sizes);
+  }
+
+  p, ul, ol {
+    @include font-size($body-font-sizes);
+  }
