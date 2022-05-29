@@ -1,1 +1,63 @@
-.button {}
+.button {
+    display: block;
+    padding: $spacing-m $spacing-l;
+    transition: .3s;
+    //font-family: ;
+    font-size: $spacing-m;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:disabled {
+        cursor: not-allowed;
+        opacity: .75;
+        text-decoration: line-through;
+    }
+    &--primary {
+        background-color: rgba($color-highlight, 0.5);
+        font-weight: 700;
+        &:hover {
+            background-color: $color-highlight;
+            box-shadow: $shadow-big;
+            transform: scale(1.1);
+        }
+        &:focus {
+            background-color: rgba($color-highlight, 0.75);
+        }
+        &:active {
+            background-color: $color-highlight;
+            box-shadow: $shadow-small;
+            transform: scale(1);
+        }
+
+    }
+    &--secondary {
+        border: 2px solid $color-highlight;
+        font-weight: 700;
+        &:hover {
+            background-color: rgba($color-highlight, 0.5);
+        }
+        &:focus {
+            background-color: rgba($color-highlight, 0.75);
+        }
+        &:active {
+            background-color: $color-highlight;;
+        }
+    }
+    &--ternary {
+        //padding: $spacing-m 0;
+        text-decoration: underline;
+        &:hover {
+            background-color: rgba($color-highlight, 0.5);
+        }
+        &:focus {
+            background-color: rgba($color-highlight, 0.75);
+        }
+        &:active {
+            background-color: $color-highlight;
+        }
+    }
+    &--small {
+        padding: $spacing-s $spacing-m;
+        font-size: $spacing-s;
+    }
+}
