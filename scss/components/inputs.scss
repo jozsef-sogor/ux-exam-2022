@@ -1,0 +1,55 @@
+.form-field{
+    margin: $spacing-xl auto;
+    &__control {
+        position: relative;
+    }
+    &__input {
+        width: 100%;
+        padding: $spacing-m $spacing-l;
+        background-color: $color-white;
+        border: 3px solid rgba($color-black, 0.35);
+        line-height: $spacing-m;
+    }
+    &__label {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        //padding: $spacing-m;
+        padding: $spacing-m;
+        color: $color-black;
+        font-size: $spacing-m;
+        line-height: $spacing-m;
+        transition: $animation-duration;
+        transform: translateY(0);
+    }
+    &__textarea {
+        width: 100%;
+        background-color: $color-white;
+        border: 3px solid rgba($color-black, 0.35);
+        height: calc(#{$spacing-xxl} * 3);
+    }
+    &__input, &__textarea {
+        &::placeholder {
+            font-size: $spacing-m;
+            line-height: $spacing-m;
+            color: rgba($color-black, 0.75);
+            opacity: 0;
+            transition: $animation-duration;
+        }
+        &:focus, &:active {
+            border: 3px solid $color-black;
+            &+label {
+                padding-left: 0;
+                padding-bottom: $spacing-xxs;
+                transform: translateY(-100%);
+            }
+            &::placeholder {
+                opacity: 1;
+            }
+        }
+        &:hover {
+            border: 3px solid rgba($color-black, 0.5);
+        }
+    }
+}

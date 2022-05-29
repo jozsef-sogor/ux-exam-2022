@@ -1,7 +1,7 @@
 .button {
     display: block;
     padding: $spacing-m $spacing-l;
-    transition: .3s;
+    transition: $animation-duration;
     //font-family: ;
     font-size: $spacing-m;
     border: none;
