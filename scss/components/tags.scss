@@ -1,0 +1,30 @@
+.tags {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        width: 100%;
+    }
+    &__tag {
+        position: relative;
+        display: block;
+        padding: $spacing-s $spacing-s $spacing-s $spacing-m;
+        margin: $spacing-xxs;
+        background-color: $color-light;
+        font-size: $spacing-s;
+        color: $color-black;
+        text-decoration: none;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(#{$spacing-m} / 2);
+            height: 100%;
+            background-color: $color-black;
+            opacity: .35;
+        }
+    }
+}
