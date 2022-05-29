@@ -1,0 +1,30 @@
+.tabs {
+    margin: auto;
+    &__title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto $spacing-l;
+    }
+    &__tab-title {
+        padding: $spacing-m $spacing-l;
+        background-color: transparent;
+        border: 1px solid $color-black;
+        text-align: center;
+        cursor: pointer;
+        border-collapse: collapse;
+        &:hover {
+            text-decoration: underline;
+        }
+        &--active {
+            padding: calc(#{$spacing-m} - 2px) calc(#{$spacing-l} - 2px);
+            border: 3px solid $color-black;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+    &__content {
+        padding: $spacing-m;
+        margin: auto;
+    }
+}
