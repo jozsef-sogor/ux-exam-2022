@@ -52,7 +52,6 @@
         @include flex-center-vertical-horizontal
     }
     &__comment-count {
-        flex-direction: column;
         @include flex-center-vertical-horizontal
     }
     &__info-icon {
@@ -61,7 +60,7 @@
         height: auto;
     }
     &__info-text {
-        font-weight: 200;
+        font-weight: 300;
         text-align: center;
     }
 }
