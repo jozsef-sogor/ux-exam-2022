@@ -1,4 +1,8 @@
 @import 'base/reset', 'base/typography';
 @import 'abstracts/variables', 'abstracts/mixins';
 @import 'components/buttons', 'components/cards', 'components/tabs', 'components/tags', 'components/inputs';
-@import 'layout/grid';
+@import 'layout/grid', 'layout/navbar.scss', 'layout/ad-banners.scss';
+
+main {
+    padding-top: calc(#{$spacing-xxxl} * 3);
+}

@@ -1,10 +1,9 @@
 @import "../abstracts/breakpoints";
 
 
-//$breakpoint-sm: 575;
-//$breakpoint-md: 765;
-//$breakpoint-lg: 990;
-//$breakpoint-xl: 1200;
+//Fonts
+$font-accent: 'Lobster', cursive;
+$font-main: 'Montserrat', sans-serif;
 
 $breakpoints: (
     s: $breakpoint-sm,
@@ -83,24 +82,35 @@ $h5-h6-font-sizes: (
 
   h1 {
     @include font-size($h1-font-sizes);
+    font-family: $font-accent;
   }
 
   h2 {
     @include font-size($h2-font-sizes);
+    font-family: $font-main;
+    font-weight: 500;
   }
 
   h3 {
     @include font-size($h3-font-sizes);
+    font-family: $font-main;
+    font-weight: 500;
   }
 
   h4 {
     @include font-size($h4-font-sizes);
+    font-family: $font-main;
+    font-weight: 300;
   }
 
   h5, h6 {
     @include font-size($h5-h6-font-sizes);
+    font-family: $font-main;
+    font-weight: 300;
   }
 
-  p, ul, ol {
+  p, ul, ol, a, * {
     @include font-size($body-font-sizes);
+    font-family: $font-main;
+    font-weight: 200;
   }

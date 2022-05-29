@@ -9,19 +9,19 @@
 //(for creating layouts use the grid classes)
 //Can be used inside class block e.g.: .button { @include for-tablet-up }
 @mixin for-small-tablet-up {
-    @media only screen and (min-width: $breakpoint-sm) { @content; }
+    @media only screen and (min-width: #{$breakpoint-sm}px) { @content; }
 }
 
 @mixin for-tablet-up {
-    @media only screen and (min-width: $breakpoint-md) { @content; }
+    @media only screen and (min-width: #{$breakpoint-md}px) { @content; }
 }
 
 @mixin for-small-desktop-up {
-    @media only screen and (min-width: $breakpoint-lg) { @content; }
+    @media only screen and (min-width: #{$breakpoint-lg}px) { @content; }
 }
 
 @mixin for-desktop-up {
-    @media only screen and (min-width: $breakpoint-xl) { @content; }
+    @media only screen and (min-width: #{$breakpoint-xl}) { @content; }
 }
 
 //Helper mixins

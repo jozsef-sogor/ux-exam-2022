@@ -15,7 +15,6 @@
         display: block;
         top: 0;
         left: 0;
-        //padding: $spacing-m;
         padding: $spacing-m;
         color: $color-black;
         font-size: $spacing-m;
@@ -43,6 +42,7 @@
                 padding-left: 0;
                 padding-bottom: $spacing-xxs;
                 transform: translateY(-100%);
+                font-weight: 500;
             }
             &::placeholder {
                 opacity: 1;

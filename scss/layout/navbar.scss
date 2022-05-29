@@ -1,0 +1,97 @@
+.navbar {
+    position: fixed;
+    height: calc(#{$spacing-xxxl} * 1.5);
+    width: 100vw;
+    background-color: $color-white;
+    z-index: 99;
+    box-shadow: $shadow-small;
+    &__container {
+        height: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: block;
+        height: 100%;
+        & > img {
+            display: block;
+            height: 100%;
+            width: auto;
+            padding: $spacing-m $spacing-l;
+        }
+    }
+    &__links-container {
+        display: none;
+        position: absolute;
+        top: calc(#{$spacing-xxxl} * 1.5);
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $color-light;
+        &--is-open {
+            display: flex;
+        }
+        @include for-small-desktop-up {
+            display: flex !important;
+            position: static;
+            flex-direction: row;
+            max-width: 35%;
+            background-color: transparent;
+        }
+    }
+    &__link {
+        width: 100%;
+        &--login {
+            @include for-small-desktop-up {
+                display: none;
+            }
+        }
+    }
+    &__link>a {
+        display: block;
+        padding: $spacing-l;
+        width: 100%;
+        border-bottom: 1px solid $color-white;
+        text-decoration: none;
+        text-align: center;
+        color: $color-black;
+        transition: $animation-duration;
+        &--active {
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+        @include for-small-desktop-up {
+            padding: $spacing-s;
+            border-bottom: none;
+        }
+    }
+    &__hamburger {
+        height: 100%;
+        padding: $spacing-m $spacing-l;
+        cursor: pointer;
+        & > i {
+            font-size: $spacing-xxl;
+        }
+        @include for-small-desktop-up {
+            display: none;
+        }
+    }
+    &__login {
+        display: none;
+        padding: $spacing-l;
+        text-decoration: none;
+        text-align: center;
+        color: $color-black;
+        font-weight: 500;
+        @include for-small-desktop-up {
+            display: block;
+        }
+    }
+}
