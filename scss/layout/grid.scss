@@ -3,6 +3,7 @@
 
 @import "../abstracts/breakpoints";
 $grid__cols: 12;
+$grid_gutter: 1rem;
 
 $map-grid-props: (
         '': 0,
@@ -36,6 +37,13 @@ $map-grid-props: (
     @for $i from 1 through $grid-cols {
       &__col#{$modifier}-#{$i} {
         flex-basis: math.div(100, math.div($grid-cols, $i))  * 1%;
+        margin-bottom: $grid_gutter;
+        @if($breakpoint != 0) {
+          margin-right: $grid_gutter;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
       }
       &__col#{$modifier}-offset-#{$i} {
         margin-left: math.div(100, math.div($grid-cols, $i))  * 1%;
@@ -68,16 +76,20 @@ $map-grid-props: (
 }
 
 .container {
-  max-width: $breakpoint-md * 1px;
-  margin: 0 auto;
+  max-width: #{$breakpoint-xl}px;
+  margin: 0 auto $grid_gutter;
   &--fluid {
     margin: 0;
     max-width: 100%;
+    .container__row {
+      margin-bottom: 0;
+    }
   }
   &__row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: $grid_gutter;
   }
   //Looping through the $map-grid-props map (from the top of the file)
   //the left side of the map value us the $modifier and the right side is te $breakpoint

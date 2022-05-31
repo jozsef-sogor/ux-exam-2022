@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="./scripts/main.js"></script>
 </head>
 <body>
+    <div class="container container--fluid">
+        <section class="container__row">
+            <!-- Start of navbar -->
+            <nav class="navbar">
+                    <div class="navbar__container">
+                    <a href="./index.html" class="navbar__logo"><img src="./assets/images/bestrecipes.png" alt="Bestrecipies" class="navbar__logo"></a>
+                    <ul class="navbar__links-container">
+                        <li class="navbar__link"><a href="./recipies.html">Recipies</a></li>
+                        <li class="navbar__link"><a href="#">Meal ideas</a></li>
+                        <li class="navbar__link"><a href="#">Blog</a></li>
+                        <li class="navbar__link navbar__link--login"><a href="./login.html">Login</a></li>
+                    </ul>
+                    <div id="hamburger-menu" class="navbar__hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a href="./login.html" class="navbar__login">Login</a>
+                </div>
+            </nav>
+            <!-- End of navbar -->
+        </section>
+    </div>
+
+    <main class="container">
+        <article class="home-page__hero container__row">
+            <div class="home-page__hero-content container__col-10 container__col-lg-8">
+                <div class="home-page__search-container">
+                    <form class="home-page__search-bar container__row" id="home-search-form" action="">
+                        <!-- Regular inputs -->
+                        <div class="form-field container__col-11">
+                            <div class="form-field__control">
+                                <input id="inputField" type="text" class="form-field__input" value="" placeholder="What are we cooking?" />
+                                <label for="inputField" class="form-field__label">Search for recipie</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="home-page__search-button button button--primary container__col-1">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <p class="home-page__search-help">Hard time deciding? <a class="home-page__search-help-link" href="./recipies.html">Search by what you have in the fridge</a></p>
+                    </form>
+                </div>
+                <div class="home-page__categories-container">
+                    <!-- Start of category tags -->
+                    <div class="tags__container">
+                        <a href="#" class="tags__tag">Tag</a>
+                        <a href="#" class="tags__tag">Lorem ipsum </a>
+                        <a href="#" class="tags__tag">dolor</a>
+                        <a href="#" class="tags__tag">sit amet</a>
+                        <a href="#" class="tags__tag">consectetur</a>                    
+                        <a href="#" class="tags__tag">Tag</a>
+                        <a href="#" class="tags__tag">Lorem ipsum </a>
+                        <a href="#" class="tags__tag">dolor</a>
+                        <a href="#" class="tags__tag">sit amet</a>
+                        <a href="#" class="tags__tag">consectetur</a>                    
+                        <a href="#" class="tags__tag">Tag</a>
+                        <a href="#" class="tags__tag">Lorem ipsum </a>
+                        <a href="#" class="tags__tag">dolor</a>
+                        <a href="#" class="tags__tag">sit amet</a>
+                    </div>
+                    <!-- End of category tags -->
+                </div>
+            </div>
+        </article>
+    </main>
     
 </body>
 </html>

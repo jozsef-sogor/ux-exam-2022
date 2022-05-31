@@ -2,7 +2,8 @@
 @import 'abstracts/variables', 'abstracts/mixins';
 @import 'components/buttons', 'components/cards', 'components/tabs', 'components/tags', 'components/inputs';
 @import 'layout/grid', 'layout/navbar.scss', 'layout/ad-banners.scss';
+@import 'pages/home';
 
 main {
-    padding-top: calc(#{$spacing-xxxl} * 3);
+    padding-top: calc(#{$spacing-xxxl} * 1.5);
 }

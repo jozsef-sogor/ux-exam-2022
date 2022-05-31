@@ -14,7 +14,7 @@
     }
     &--primary {
         background-color: rgba($color-highlight, 0.5);
-        font-weight: 700;
+        font-weight: 500;
         &:hover {
             background-color: $color-highlight;
             box-shadow: $shadow-big;
@@ -32,7 +32,7 @@
     }
     &--secondary {
         border: 2px solid $color-highlight;
-        font-weight: 700;
+        font-weight: 500;
         &:hover {
             background-color: rgba($color-highlight, 0.5);
         }

@@ -1,0 +1,24 @@
+.home-page {
+    &__hero {
+        position: relative;
+        min-height: 80vh;
+        background-color: $color-light;
+        @include flex-center-vertical-horizontal;
+    }
+    &__hero-content {
+    }
+    &__search-container {}
+    &__search-bar {
+        padding-bottom: $spacing-m;
+    }
+    &__search-button {
+        height: 3.6rem;
+        align-self: center;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+    }
+    &__search-help, &__search-help-link {
+        margin-top: -#{$spacing-xs};
+        font-size: $spacing-s;
+    }
+}
