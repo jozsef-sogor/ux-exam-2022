@@ -39,9 +39,9 @@ $map-grid-props: (
         flex-basis: math.div(100, math.div($grid-cols, $i))  * 1%;
         margin-bottom: $grid_gutter;
         @if($breakpoint != 0) {
-          margin-right: $grid_gutter;
+          padding-right: $grid_gutter;
           &:last-of-type {
-            margin-right: 0;
+            padding-right: 0;
           }
         }
       }
@@ -89,6 +89,7 @@ $map-grid-props: (
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0 $spacing-m;
     margin-bottom: $grid_gutter;
   }
   //Looping through the $map-grid-props map (from the top of the file)
