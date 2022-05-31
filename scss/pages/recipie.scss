@@ -152,3 +152,33 @@
     &__similar-recipies {}
 
 }
+
+.tooltip-container {
+    display: none;
+    position: absolute;
+    min-width: calc(#{$spacing-xxxl} * 3);
+    max-width: calc(#{$spacing-xxxl} * 7);
+    width: auto;
+    height: auto;
+    padding: $spacing-m;
+    font-size: $spacing-m;
+    line-height: $spacing-l;
+    background: $color-white;
+    box-shadow: $shadow-big;
+    z-index: 100;
+    opacity: 0;
+  }
+  
+  .fade-in {
+    display: block;
+    animation: fade $animation-duration linear forwards;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
