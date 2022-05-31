@@ -92,6 +92,9 @@
     }
 
     &__main-content {}
+    &__recipie-tab-wrapper {
+        flex-direction: row-reverse;
+    }
     &__steps-container {
         @include for-small-tablet-up {
             padding-right: $spacing-l !important;
@@ -135,6 +138,15 @@
     &__ingredients-button {
         width: calc(100% - #{$spacing-l});
         margin-top: $spacing-m;
+    }
+
+    &__add-comment {
+        padding: $spacing-l;
+        background-color: $color-accent;
+    }
+    &__add-comment-buttons {
+        display: flex;
+        align-items: baseline;
     }
 
     &__similar-recipies {}
