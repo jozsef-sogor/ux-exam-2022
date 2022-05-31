@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload your recipie | Best recipies</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="./scripts/main.js"></script>
+</head>
+<body>
+    <div class="container container--fluid">
+        <section class="container__row">
+            <!-- Start of navbar -->
+            <nav class="navbar">
+                    <div class="navbar__container">
+                    <a href="./index.html" class="navbar__logo"><img src="./assets/images/bestrecipes.png" alt="Bestrecipies" class="navbar__logo"></a>
+                    <ul class="navbar__links-container">
+                        <li class="navbar__link"><a href="./recipies.html">Recipies</a></li>
+                        <li class="navbar__link"><a href="#">Meal ideas</a></li>
+                        <li class="navbar__link"><a href="#">Blog</a></li>
+                        <li class="navbar__link navbar__link--login"><a href="./login.html">Login</a></li>
+                    </ul>
+                    <div id="hamburger-menu" class="navbar__hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a href="./login.html" class="navbar__login">Login</a>
+                </div>
+            </nav>
+            <!-- End of navbar -->
+        </section>
+    </div>
+
+    <main>
+        <form id="upload-recipie-form" class="container">
+            <section class="upload-page__hero container__row">
+                <div class="upload-page__carousel container__col-12 container__col-lg-6">
+                    <div class="upload-page__carousel-main-img-wrapper">
+                        <img src="./assets/images/upload-image.png" alt="Raspberry Chess Pie Bars" class="upload-page__carousel-main-img">
+                    </div>
+                    <div class="upload-page__carousel-small-img-container">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="upload-page__carousel-small-img">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="upload-page__carousel-small-img">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="upload-page__carousel-small-img">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="upload-page__carousel-small-img">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="upload-page__carousel-small-img">                  
+                    </div>
+                </div>
+
+                <div class="upload-page__recipie-preview container__col-12 container__col-lg-6">
+                    <div class="form-field">
+                        <div class="form-field__control">
+                            <input id="inputField" type="text" class="form-field__input" value="" placeholder="Name your creation" />
+                            <label for="inputField" class="form-field__label">Recipie name</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Text area -->
+                    <div class="form-field">
+                        <div class="form-field__control">
+                        <textarea id="textarea" class="form-field__textarea" placeholder="Keep it short, noone has time to read a novel"></textarea>
+                        <label for="textarea" class="form-field__label">Short recipie description</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <article class="container__row">
+                <div class="container__col-12 banner banner--wide"></div>
+            </article>
+
+            <div class="upload-page__category-and-tags container__row">
+                <div class="upload-page__recipie-tags-wrapper  container__col-12 container__col-md-6">
+                    <div class="upload-page__tags-input-container">
+                        <div class="form-field">
+                            <div class="form-field__control">
+                                <input id="inputField" type="text" class="form-field__input" value="" placeholder="How would you describe the dish" />
+                                <label for="inputField" class="form-field__label">Add tags</label>
+                            </div>
+                        </div>
+                        <button class="button button--secondary">Add tag</button>
+                    </div>
+                    <div class="upload-page__recipie-tags-container">
+                        <a href="#" class="tags__tag">Easy</a>
+                        <a href="#" class="tags__tag">Vegan</a>
+                    </div>
+                </div>
+
+                <div class="upload-page__recipie-category-container container__col-12 container__col-md-6">
+                    <select name="recipie_category" id="recipie-category" class="upload-page__recipie-category-dropdown">
+                        <option value="1">Category 1</option>
+                        <option value="2">Category 2</option>
+                        <option value="3">Category 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="upload-page__main-content container__row">
+
+                <div class="upload-page__recipie-tab-wrapper container__row">
+
+                    <aside class="upload-page__ingredients-aside container__col-12 container__col-md-4">
+                        <h3 class="upload-page__ingredients-title">Ingredients</h3>
+                        <div class="upload-page__ingredients-container">
+                            <!-- Regular inputs -->
+                            <div class="form-field upload-page__ingredients-form-field">
+                                <div class="form-field__control">
+                                    <input id="inputField" type="text" class="form-field__input" value="" placeholder="Make it your own" />
+                                    <label for="inputField" class="form-field__label">Ingredient name</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="upload-page__ingredients-button button button--secondary">Add ingredient</button>
+                            <ul class="upload-page__ingredients-list">
+                                <li class="upload-page__ingredient">560g All-purpose flour <button class="button button--ternary button--small">Remove</button></li>
+                                <li class="upload-page__ingredient">2 Eggs <button class="button button--ternary button--small">Remove</button></li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <div class="upload-page__steps-container container__col-12 container__col-md-8">
+                        <div class="upload-page__step">
+                            <!-- Text area -->
+                            <div class="form-field">
+                                <div class="form-field__control">
+                                <textarea id="textarea" class="form-field__textarea" placeholder="What's next?"></textarea>
+                                <label for="textarea" class="form-field__label">Add insturction step</label>
+                                </div>
+                            </div>
+                            <div class="upload-page__step-buttons">
+                                <button class="button button--secondary">Add step</button>
+                                <button class="button button--ternary">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </main>
+    
+</body>
+</html>

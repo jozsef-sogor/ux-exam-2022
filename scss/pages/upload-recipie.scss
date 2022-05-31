@@ -1,0 +1,111 @@
+.upload-page {
+    &__hero {
+        padding: $spacing-l 0;
+    }
+    &__carousel {}
+    &__carousel-main-img-wrapper {
+        position: relative;
+        width: 100%;
+        max-height: calc(#{$spacing-xxxl} * 7);
+        margin-bottom: $spacing-s;
+        overflow: hidden;
+        @include flex-center-vertical-horizontal;
+    }
+    &__carousel-main-img {}
+    &__carousel-small-img-container {
+        position: relative;
+        width: 100%;
+        max-height: calc(#{$spacing-xxxl} * 2);
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    &__carousel-small-img {
+        max-height: calc(#{$spacing-xxxl} * 2);
+        width: auto;
+        margin-right: $spacing-s;
+    }
+
+    &__recipie-preview {
+        position: relative;
+    }
+    &__recipie-title {
+        padding-bottom: $spacing-xs;
+    }
+    &__short-description {
+        font-size: $spacing-l;
+        line-height: $spacing-xl;
+        padding-bottom: $spacing-xl;
+    }
+
+    &__category-and-tags {}
+    &__tags-input-container {
+        display: flex;
+        align-items: center;
+        .form-field {
+            width: 100%;
+        }
+        .button {
+            width: fit-content;
+        }
+    }
+    &__recipie-tags-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding-bottom: $spacing-m;
+        font-size: $spacing-l;
+    }
+    &__recipie-tag {
+        padding: 0 $spacing-m;
+        border-right: 1px solid $color-black;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    &__recipie-category-dropdown {
+        padding: $spacing-s $spacing-l;
+        margin-top: $spacing-l;
+        width: 100%;
+    }
+
+    &__main-content {}
+    &__recipie-tab-wrapper {
+        flex-direction: row-reverse;
+    }
+    &__steps-container {
+        @include for-small-tablet-up {
+            padding-right: $spacing-l !important;
+        }
+    }
+    &__step {}
+    &__step-buttons {
+        @include flex-center-vertical-horizontal
+    }
+
+    &__ingredients-aside {
+        padding: $spacing-l;
+        height: fit-content;
+        background-color: $color-accent;
+    }
+    &__ingredients-title {
+        padding-bottom: $spacing-l;
+        text-align: center;
+    }
+    &__ingredients-button, &__ingredients-form-field input {
+        width: calc(100% - #{$spacing-l});
+        margin-top: $spacing-m;
+    }
+    &__ingredients-list {
+        padding: $spacing-l;
+    }
+    &__ingredient {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $spacing-m;
+        list-style-type: disc;
+    }
+}
