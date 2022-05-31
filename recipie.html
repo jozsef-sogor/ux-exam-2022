@@ -4,9 +4,287 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Best recipies | Home page</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="./scripts/main.js"></script>
 </head>
 <body>
+    <div class="container container--fluid">
+        <section class="container__row">
+            <!-- Start of navbar -->
+            <nav class="navbar">
+                    <div class="navbar__container">
+                    <a href="./index.html" class="navbar__logo"><img src="./assets/images/bestrecipes.png" alt="Bestrecipies" class="navbar__logo"></a>
+                    <ul class="navbar__links-container">
+                        <li class="navbar__link"><a href="./recipies.html">Recipies</a></li>
+                        <li class="navbar__link"><a href="#">Meal ideas</a></li>
+                        <li class="navbar__link"><a href="#">Blog</a></li>
+                        <li class="navbar__link navbar__link--login"><a href="./login.html">Login</a></li>
+                    </ul>
+                    <div id="hamburger-menu" class="navbar__hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a href="./login.html" class="navbar__login">Login</a>
+                </div>
+            </nav>
+            <!-- End of navbar -->
+        </section>
+    </div>
+
+    <main>
+        <article class="container">
+            <section class="recipie-page__hero container__row">
+                <div class="recipie-page__carousel container__col-12 container__col-lg-6">
+                    <div class="recipie-page__carousel-main-img-wrapper">
+                        <img src="./assets/images/recipie/recipie-main-img.webp" alt="Raspberry Chess Pie Bars" class="recipie-page__carousel-main-img">
+                    </div>
+                    <div class="recipie-page__carousel-small-img-container">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="recipie-page__carousel-small-img">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="recipie-page__carousel-small-img">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="recipie-page__carousel-small-img">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="recipie-page__carousel-small-img">
+                        <img src="./assets/images/recipie/recipie-img-small.jpeg" alt="Raspberry Chess Pie Bars" class="recipie-page__carousel-small-img">                  
+                    </div>
+                </div>
+
+                <div class="recipie-page__recipie-preview container__col-12 container__col-lg-6">
+                    <h1 class="recipie-page__recipie-title">Raspberry Chess Pie Bars</h1>
+                    <p class="recipie-page__recipie-author">By: John Doe</p>
+                    <i class="recipie-page__recipie-heart fa-solid fa-heart"></i>
+                    <div class="recipie-page__recipie-rating-container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span class="recipie-page__recipie-rating-count">(32)</span>
+                    </div>
+                    <div class="recipie-page__recipie-tags-container">
+                        <span class="recipie-page__recipie-tag">Easy</span>
+                        <span class="recipie-page__recipie-tag">Quick</span>
+                        <span class="recipie-page__recipie-tag">Tasty</span>
+                    </div>
+                    <p class="recipie-page__short-description">This is an old-fashioned Southern dessert in bar form. Because the recipe makes a lot, it would be a welcome addition to any potluck table. A delicious buttermilk custard hides beneath sweet ripe raspberries—you can make this with other berries too. Use fresh berries if you can, but frozen berries will work just fine (do not thaw them before using).</p>
+                    <ul class="recipie-page__recipie-stats">
+                        <li class="recipie-page__stat"><span class="recipie-page__stat-title">Total time</span>100min</li>
+                        <li class="recipie-page__stat"><span class="recipie-page__stat-title">Calories</span>250kcal / serving</li>
+                        <li class="recipie-page__stat"><span class="recipie-page__stat-title">Difficulty</span>Easy</li>
+                    </ul>
+                </div>
+            </section>
+
+            <article class="container__row">
+                <div class="container__col-12 banner banner--wide"></div>
+            </article>
+
+            <div class="recipie-page__main-content container__row">
+
+                <!-- Start of tabs -->
+                <section class="tabs">
+                    <ul class="tabs__title-container">
+                        <li data-tabid="1" data-isactive="true" class="tabs__tab-title">Instructions</li>
+                        <li data-tabid="2" class="tabs__tab-title">Comments (2)</li>
+                    </ul>
+                    <section id="tab-1" class="tabs__content">
+                        <div class="container__row">
+                            <ul class="recipie-page__steps-container container__col-12 container__col-md-8">
+                                <li class="recipie-page__step">Position a rack in the middle of the oven and preheat the oven to 350°F (175°C). Lightly butter the bottom and sides of a 12-by-17-inch (30 by 43 cm) rimmed baking sheet, then line with <span>parchment</span>, leaving an overhang on two opposite sides of the pan.</li>
+                                <li class="recipie-page__step">In a large bowl, use your hands or a fork to combine the flour, brown sugar, and salt. Slowly <span>drizzle</span> in the butter and stir with a fork until the mixture looks moist and crumbly. <br><br> Using your hands, press the dough evenly over the bottom and up the sides of the baking sheet. You can decorate the edges by crimping them with a fork or leaving them rustic. Refrigerate for 15 minutes to set the crust.</li>
+                                <li class="recipie-page__step">Line the crust with parchment and fill with dried beans, rice, or pie weights. Bake for 12 to 15 minutes, until the crust is just set and lightly browned. Remove the parchment and weights and set the crust on the wire rack to cool completely before filling. <br><br>Reduce the oven temperature to 325°F (165°C). Carefully position the rack in the lower third of the oven.</li>
+                                <li class="recipie-page__step">In a small bowl, whisk together the flour, cornmeal, and salt. Set aside. <br><br>In the bowl of a stand mixer fitted with the paddle attachment (or in a large mixing bowl, using a handheld mixer), cream the butter and sugar together on medium speed until superlight and fluffy, 3 to 5 minutes. Beat in the vanilla. Add the eggs one (50g) at a time, beating well after each addition and scraping down the sides and bottom of the bowl with a rubber spatula as necessary.<br><br> Reduce the speed to low and add the flour mixture in thirds, beating until just well blended. Slowly add the buttermilk, beating until thoroughly combined, scraping down the sides and bottom of the bowl as necessary.</li>
+                                <li class="recipie-page__step">Pour the filling into the prepared crust. Arrange the berries on top of the filling, then sprinkle with the sugar. <br><br>Bake for 40 to 45 minutes, until the filling is golden and puffed up at the edges and the center no longer looks wet but still wobbles slightly when jiggled; it will continue to set as it cools.</li>
+                                <li class="recipie-page__step">Let cool completely on a wire rack before cutting into bars. <br><br>The bars can be stored in an airtight container in the refrigerator for up to 1 week.</li>
+                            </ul>
+
+                            <aside class="recipie-page__ingredients-aside container__col-12 container__col-md-4">
+                                <h3 class="recipie-page__ingredients-title">Ingredients</h3>
+                                <form action="" id="recipie-ingredients-form" class="recipie-page__ingredients-container">
+                                    <h4 class="recipie-page__ingredients-list-title">For the brown sugar crust</h4>
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="crust_flour" id="crust-flour" class="recipie-page__ingredient-checkbox">
+                                        <label for="crust-flour" class="recipie-page__ingredient-label">560g All-purpose flour</label>
+                                    </div>
+
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="crust_brown_sugar" id="" class="recipie-page__ingredient-checkbox">
+                                        <label for="" class="recipie-page__ingredient-label">150g Brown sugar</label>
+                                    </div>
+
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="crust_salt" id="crust-salt" class="recipie-page__ingredient-checkbox">
+                                        <label for="crust-salt" class="recipie-page__ingredient-label">Pinch of salt</label>
+                                    </div>
+
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="crust_butter" id="crust-butter" class="recipie-page__ingredient-checkbox">
+                                        <label for="crust-butter" class="recipie-page__ingredient-label">450g Melted butter</label>
+                                    </div>
+
+                                    <h4 class="recipie-page__ingredients-list-title">For the filling</h4>
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="filling_flour" id="filling-flour" class="recipie-page__ingredient-checkbox">
+                                        <label for="filling-flour" class="recipie-page__ingredient-label">125g All-purpose flour</label>
+                                    </div>
+
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="filling_cornmeal" id="filling-cornmeal" class="recipie-page__ingredient-checkbox">
+                                        <label for="filling-cornmeal" class="recipie-page__ingredient-label">45g Cornmeal</label>
+                                    </div>
+
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="filling_butter" id="filling-butter" class="recipie-page__ingredient-checkbox">
+                                        <label for="filling-butter" class="recipie-page__ingredient-label">290g Butter</label>
+                                    </div>
+
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="filling_sugar" id="filling-sugar" class="recipie-page__ingredient-checkbox">
+                                        <label for="filling-sugar" class="recipie-page__ingredient-label">400g Granulated sugar</label>
+                                    </div>
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="filling_vanilla" id="filling-vanilla" class="recipie-page__ingredient-checkbox">
+                                        <label for="" class="recipie-page__ingredient-label">2tbs Vanilla extract</label>
+                                    </div>
+
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="filling_eggs" id="" class="recipie-page__ingredient-checkbox">
+                                        <label for="filling-eggs" class="recipie-page__ingredient-label">8 Eggs</label>
+                                    </div>
+
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="filling_buttermilk" id="filling-buttermilk" class="recipie-page__ingredient-checkbox">
+                                        <label for="filling-buttermilk" class="recipie-page__ingredient-label">600ml Buttermilk</label>
+                                    </div>
+                                    
+                                    <div class="recipie-page__checkbox-control">
+                                        <input type="checkbox" name="filling_raspberries" id="filling-raspberries" class="recipie-page__ingredient-checkbox">
+                                        <label for="filling-raspberries" class="recipie-page__ingredient-label">480g Raspberries</label>
+                                    </div>
+
+                                    <button type="submit" class="recipie-page__ingredients-button button button--primary">Add to shopping list</button>
+                                </form>
+                            </aside>
+                        </div>
+                    </section>
+
+
+                    <section id="tab-2" class="tabs__content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta convallis erat. Aliquam vehicula finibus magna a convallis. Curabitur quis arcu enim. Suspendisse euismod risus molestie, euismod mauris a, aliquam sapien. Sed a purus nibh. Donec eu lorem nibh. Ut efficitur dolor justo, eu cursus arcu efficitur vel.
+                    </section>
+                </section>
+                <!-- End of tabs -->
+            </div>
+        </article>
+
+
+
+        <section class="recipie-page__similar-recipies container">
+            <div class="container__row">
+                <h2 class="recipie-page__section-title container__col-12">Similar recipies</h2>
+                <!-- Start of recipie card -->
+                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                    <div class="card__wrapper">
+                        <div class="card__img-wrapper">
+                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                        </div>
+                        <div class="card__content">
+                            <header class="card__header">
+                                <h3 class="card__header-title">Recipie title</h3>
+                                <i class="card__header-heart fa-regular fa-heart"></i>
+                            </header>
+                            <p class="card__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                            </p>
+                            <footer class="card__footer">
+                                <div class="card__footer-rating rating-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="card__footer-info">
+                                    <div class="card__comment-count">
+                                        <i class="card__info-icon fa-regular fa-comment"></i>
+                                        <p class="card__info-text">2</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+                <!-- End of Recipie card -->
+                <!-- Start of recipie card -->
+                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                    <div class="card__wrapper">
+                        <div class="card__img-wrapper">
+                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                        </div>
+                        <div class="card__content">
+                            <header class="card__header">
+                                <h3 class="card__header-title">Recipie title</h3>
+                                <i class="card__header-heart fa-regular fa-heart"></i>
+                            </header>
+                            <p class="card__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                            </p>
+                            <footer class="card__footer">
+                                <div class="card__footer-rating rating-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="card__footer-info">
+                                    <div class="card__comment-count">
+                                        <i class="card__info-icon fa-regular fa-comment"></i>
+                                        <p class="card__info-text">2</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+                <!-- End of Recipie card -->
+                <!-- Start of recipie card -->
+                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                    <div class="card__wrapper">
+                        <div class="card__img-wrapper">
+                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                        </div>
+                        <div class="card__content">
+                            <header class="card__header">
+                                <h3 class="card__header-title">Recipie title</h3>
+                                <i class="card__header-heart fa-regular fa-heart"></i>
+                            </header>
+                            <p class="card__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                            </p>
+                            <footer class="card__footer">
+                                <div class="card__footer-rating rating-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="card__footer-info">
+                                    <div class="card__comment-count">
+                                        <i class="card__info-icon fa-regular fa-comment"></i>
+                                        <p class="card__info-text">2</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </article>
+                <!-- End of Recipie card -->
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>

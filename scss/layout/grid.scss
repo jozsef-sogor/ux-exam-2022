@@ -78,9 +78,11 @@ $map-grid-props: (
 .container {
   max-width: #{$breakpoint-xl}px;
   margin: 0 auto $grid_gutter;
+  padding: 0 $spacing-m;
   &--fluid {
     margin: 0;
     max-width: 100%;
+    padding: 0;
     .container__row {
       margin-bottom: 0;
     }
@@ -89,7 +91,7 @@ $map-grid-props: (
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 $spacing-m;
+    //padding: 0 $spacing-m;
     margin-bottom: $grid_gutter;
   }
   //Looping through the $map-grid-props map (from the top of the file)

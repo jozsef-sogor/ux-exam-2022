@@ -34,435 +34,438 @@
         </section>
     </div>
 
-    <main class="container">
-        <article class="home-page__hero container__row">
-            <div class="home-page__hero-content container__col-10 container__col-lg-8">
-                <div class="home-page__search-container">
-                    <form class="home-page__search-bar container__row" id="home-search-form" action="">
-                        <!-- Regular inputs -->
-                        <div class="form-field container__col-11">
-                            <div class="form-field__control">
-                                <input id="inputField" type="text" class="form-field__input" value="" placeholder="What are we cooking?" />
-                                <label for="inputField" class="form-field__label">Search for recipie</label>
+    <main>
+        <div class="container container--fluid">
+            <article class="home-page__hero container__row">
+                <div class="home-page__hero-content container__col-10 container__col-lg-8">
+                    <div class="home-page__search-container">
+                        <form class="home-page__search-bar container__row" id="home-search-form" action="">
+                            <!-- Regular inputs -->
+                            <div class="form-field container__col-11">
+                                <div class="form-field__control">
+                                    <input id="inputField" type="text" class="form-field__input" value="" placeholder="What are we cooking?" />
+                                    <label for="inputField" class="form-field__label">Search for recipie</label>
+                                </div>
                             </div>
+                            <button type="submit" class="home-page__search-button button button--primary container__col-1">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <p class="home-page__search-help">Hard time deciding? <a class="home-page__search-help-link" href="./recipies.html">Search by what you have in the fridge</a></p>
+                        </form>
+                    </div>
+                    <div class="home-page__categories-container">
+                        <!-- Start of category tags -->
+                        <div class="tags__container">
+                            <a href="#" class="tags__tag">Tag</a>
+                            <a href="#" class="tags__tag">Lorem ipsum </a>
+                            <a href="#" class="tags__tag">dolor</a>
+                            <a href="#" class="tags__tag">sit amet</a>
+                            <a href="#" class="tags__tag">consectetur</a>                    
+                            <a href="#" class="tags__tag">Tag</a>
+                            <a href="#" class="tags__tag">Lorem ipsum </a>
+                            <a href="#" class="tags__tag">dolor</a>
+                            <a href="#" class="tags__tag">sit amet</a>
+                            <a href="#" class="tags__tag">consectetur</a>                    
+                            <a href="#" class="tags__tag">Tag</a>
+                            <a href="#" class="tags__tag">Lorem ipsum </a>
+                            <a href="#" class="tags__tag">dolor</a>
+                            <a href="#" class="tags__tag">sit amet</a>
                         </div>
-                        <button type="submit" class="home-page__search-button button button--primary container__col-1">
-                            <i class="fa fa-search"></i>
-                        </button>
-                        <p class="home-page__search-help">Hard time deciding? <a class="home-page__search-help-link" href="./recipies.html">Search by what you have in the fridge</a></p>
-                    </form>
+                        <!-- End of category tags -->
+                    </div>
                 </div>
-                <div class="home-page__categories-container">
-                    <!-- Start of category tags -->
-                    <div class="tags__container">
-                        <a href="#" class="tags__tag">Tag</a>
-                        <a href="#" class="tags__tag">Lorem ipsum </a>
-                        <a href="#" class="tags__tag">dolor</a>
-                        <a href="#" class="tags__tag">sit amet</a>
-                        <a href="#" class="tags__tag">consectetur</a>                    
-                        <a href="#" class="tags__tag">Tag</a>
-                        <a href="#" class="tags__tag">Lorem ipsum </a>
-                        <a href="#" class="tags__tag">dolor</a>
-                        <a href="#" class="tags__tag">sit amet</a>
-                        <a href="#" class="tags__tag">consectetur</a>                    
-                        <a href="#" class="tags__tag">Tag</a>
-                        <a href="#" class="tags__tag">Lorem ipsum </a>
-                        <a href="#" class="tags__tag">dolor</a>
-                        <a href="#" class="tags__tag">sit amet</a>
-                    </div>
-                    <!-- End of category tags -->
-                </div>
-            </div>
-        </article>
-
-        <article class="container__row">
-            <div class="container__col-12 banner banner--wide"></div>
-        </article>
-
-        <article class="home-page__recipies-container">
-            <section class="container__row">
-                <h2 class="home-page__section-title container__col-12">Top vegan recipies</h2>
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-            </section>
-
-            <section class="container__row">
-                <h2 class="home-page__section-title container__col-12">Quick meals for a weekday</h2>
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-                <article class="container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="banner banner--card"></div>
-                </article>
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-            </section>
-
+            </article>
+        </div>
+        <div class="container">
             <article class="container__row">
                 <div class="container__col-12 banner banner--wide"></div>
             </article>
 
-            <section class="container__row">
-                <h2 class="home-page__section-title container__col-12">Cooking 101</h2>
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
+            <article class="home-page__recipies-container">
+                <section class="container__row">
+                    <h2 class="home-page__section-title container__col-12">Top vegan recipies</h2>
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
                                     </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </footer>
+                                </footer>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-                <!-- Start of recipie card -->
-                <article class="card container__col-12 container__col-md-6 container__col-lg-4">
-                    <div class="card__wrapper">
-                        <div class="card__img-wrapper">
-                            <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
-                        </div>
-                        <div class="card__content">
-                            <header class="card__header">
-                                <h3 class="card__header-title">Recipie title</h3>
-                                <i class="card__header-heart fa-regular fa-heart"></i>
-                            </header>
-                            <p class="card__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
-                            </p>
-                            <footer class="card__footer">
-                                <div class="card__footer-rating rating-stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </div>
-                                <div class="card__footer-info">
-                                    <div class="card__comment-count">
-                                        <i class="card__info-icon fa-regular fa-comment"></i>
-                                        <p class="card__info-text">2</p>
+                    </article>
+                    <!-- End of Recipie card -->
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
                                     </div>
-                                </div>
-                            </footer>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <!-- End of Recipie card -->
-            </section>
+                    </article>
+                    <!-- End of Recipie card -->
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                </section>
 
-        </article>
+                <section class="container__row">
+                    <h2 class="home-page__section-title container__col-12">Quick meals for a weekday</h2>
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                    <article class="container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="banner banner--card"></div>
+                    </article>
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                </section>
+
+                <article class="container__row">
+                    <div class="container__col-12 banner banner--wide"></div>
+                </article>
+
+                <section class="container__row">
+                    <h2 class="home-page__section-title container__col-12">Cooking 101</h2>
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                    <!-- Start of recipie card -->
+                    <article class="card container__col-12 container__col-md-6 container__col-lg-4">
+                        <div class="card__wrapper">
+                            <div class="card__img-wrapper">
+                                <img src="./assets//images/recipie-img-1.jpeg" alt="Recipie name" class="card__img">
+                            </div>
+                            <div class="card__content">
+                                <header class="card__header">
+                                    <h3 class="card__header-title">Recipie title</h3>
+                                    <i class="card__header-heart fa-regular fa-heart"></i>
+                                </header>
+                                <p class="card__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis neque et efficitur blandit. Duis ut dictum libero. Cras elit elit, tempor ac purus a, aliquet facilisis lorem.
+                                </p>
+                                <footer class="card__footer">
+                                    <div class="card__footer-rating rating-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div class="card__footer-info">
+                                        <div class="card__comment-count">
+                                            <i class="card__info-icon fa-regular fa-comment"></i>
+                                            <p class="card__info-text">2</p>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- End of Recipie card -->
+                </section>
+
+            </article>
+        </div>
     </main>
     
 </body>
