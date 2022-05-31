@@ -2,7 +2,10 @@
     &__hero {
         position: relative;
         min-height: 80vh;
-        background-color: $color-light;
+        background-image: url('../assets/images/home-page-hero-bg.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
         @include flex-center-vertical-horizontal;
     }
     &__hero-content {
