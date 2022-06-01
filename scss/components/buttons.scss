@@ -2,10 +2,10 @@
     display: block;
     padding: $spacing-m $spacing-l;
     transition: $animation-duration;
-    //font-family: ;
     font-size: $spacing-m;
     border: none;
     background-color: transparent;
+    color: $color-black;text-decoration: none;
     cursor: pointer;
     &:disabled {
         cursor: not-allowed;
