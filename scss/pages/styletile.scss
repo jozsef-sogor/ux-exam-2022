@@ -1,0 +1,59 @@
+.styletile {
+    &__main-wrapper {
+        padding-top: calc(#{$spacing-xl} * 4);
+    }
+    &__main-title {
+        padding: $spacing-l 0 $spacing-xl;
+    }
+    &__sub-heading {
+        padding: $spacing-m 0 $spacing-l;
+    }
+    &__section {
+        margin-bottom: $spacing-xxl;
+    }
+    &__section-title {
+        width: 100%;
+        padding: $spacing-s 0 $spacing-m;
+    }
+
+    &__typography-container {
+        max-width: calc(#{$spacing-xxxl * 8});
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__typography-example {
+        margin-right: $spacing-m;
+    }
+    &__font-name {}
+
+    &__color-container {
+        flex-direction: column;
+        padding: $spacing-m $spacing-xl;
+        @include flex-center-vertical-horizontal
+    }
+    &__color-swatch {
+        width: $spacing-xxxl;
+        height: $spacing-xxxl;
+        margin-bottom: $spacing-m;
+        &--highlight {
+            background-color: $color-highlight;
+        }
+        &--accent {
+            background-color: $color-accent;
+        }
+        &--light {
+            background-color: $color-light;
+        }
+        &--white {
+            background-color: $color-white;
+        }
+        &--black {
+            background-color: $color-black;
+        }
+    }
+    &__color-code {
+        display: block;
+        text-align: center;
+    }
+}

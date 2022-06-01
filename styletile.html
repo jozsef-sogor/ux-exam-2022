@@ -34,8 +34,67 @@
         </section>
     </div>
     <main class="container">
-        <article>
-            <section class="container__row">
+        <article class="styletile__main-wrapper">
+            <h1 class="styletile__main-title">Style tile</h1>
+            <h2 class="styletile__sub-heading">Typography</h2>
+            <section class="styletile__section">
+                <div class="styletile__typography-container">
+                    <h1 class="styletile__typgraphy-example">Heading 1</h1>
+                    <p class="styeltile__font-name">Lobster</p>
+                </div>
+                <div class="styletile__typography-container">
+                    <h2 class="styletile__typgraphy-example">Heading 2</h2>
+                    <p class="styeltile__font-name">Montserrat</p>
+                </div>
+                <div class="styletile__typography-container">
+                    <h3 class="styletile__typgraphy-example">Heading 3</h3>
+                    <p class="styeltile__font-name">Montserrat</p>
+                </div>
+                <div class="styletile__typography-container">
+                    <h4 class="styletile__typgraphy-example">Heading 4</h4>
+                    <p class="styeltile__font-name">Montserrat</p>
+                </div>
+                <div class="styletile__typography-container">
+                    <h5 class="styletile__typgraphy-example">Heading 5</h5>
+                    <p class="styeltile__font-name">Montserrat</p>
+                </div>
+                <div class="styletile__typography-container">
+                    <h6 class="styletile__typgraphy-example">Heading 6</h6>
+                    <p class="styeltile__font-name">Montserrat</p>
+                </div>
+                <div class="styletile__typography-container">
+                    <p class="styletile__typgraphy-example">Body text</p>
+                    <p class="styeltile__font-name">Montserrat</p>
+                </div>
+            </section>
+
+            <h2 class="styletile__sub-heading">Colors</h2>
+            <section class="styletile__section container__row">
+                <div class="styletile__color-container">
+                    <div class="styletile__color-swatch styletile__color-swatch--highlight"></div>
+                    <span class="styletile__color-code">#BDD172</span>
+                </div>
+                <div class="styletile__color-container">
+                    <div class="styletile__color-swatch styletile__color-swatch--accent"></div>
+                    <span class="styletile__color-code">#F7D0B5</span>
+                </div>
+                <div class="styletile__color-container">
+                    <div class="styletile__color-swatch styletile__color-swatch--light"></div>
+                    <span class="styletile__color-code">#F4F1E7</span>
+                </div>
+                <div class="styletile__color-container">
+                    <div class="styletile__color-swatch styletile__color-swatch--white"></div>
+                    <span class="styletile__color-code">#fcfcfc</span>
+                </div>
+                <div class="styletile__color-container">
+                    <div class="styletile__color-swatch styletile__color-swatch--black"></div>
+                    <span class="styletile__color-code">#000000</span>
+                </div>
+            </section>
+
+            <h2 class="styletile__sub-heading">Components</h2>
+            <section class="styletile__section container__row">
+                <h3 class="styletile__section-title">Cards</h3>
                 <!-- Start of recipie card -->
                 <article class="card container__col-12 container__col-md-6 container__col-lg-4">
                     <div class="card__wrapper">
@@ -72,7 +131,7 @@
                 <!-- Start of blog card -->
                 <article class="card container__col-12 container__col-md-6 container__col-lg-4">
                     <div class="card__img-wrapper">
-                        <img src="" alt="" class="card__img">
+                        <img src="./assets/images/blog-preview.jpg" alt="Blog title" class="card__img">
                     </div>
                     <div class="card__content">
                         <header class="card__header">
@@ -86,7 +145,8 @@
                 <!-- End of blog card -->
             </section>
 
-            <section class="container__row">
+            <section class="styletile__section container__row">
+                <h3 class="styletile__section-title">Buttons</h3>
                 <!-- Start of buttons -->
                 <div class="container__col-4"><button class="button button--primary">Primary</button></div>
                 <div class="container__col-4"><button class="button button--secondary">Secondary</button></div>
@@ -98,7 +158,8 @@
                 <!-- End of buttons -->
             </section>
 
-            <section class="container__row">
+            <section class="styletile__section container__row">
+                <h3 class="styletile__section-title">Tabs</h3>
                 <!-- Start of tabs -->
                 <section class="tabs">
                     <ul class="tabs__title-container">
@@ -120,7 +181,8 @@
                 <!-- End of tabs -->
             </section>
 
-            <section class="container__row">
+            <section class="styletile__section container__row">
+                <h3 class="styletile__section-title">Tags</h3>
                 <!-- Start of category tags -->
                 <div class="tags__container">
                     <a href="#" class="tags__tag">Tag</a>
@@ -138,7 +200,8 @@
                 <!-- End of category tags -->
             </section>
 
-            <section class="container__row">
+            <section class="styletile__section container__row">
+                <h3 class="styletile__section-title">Ad banners</h3>
                 <!-- Start of banners -->
                 <div class="container__col-12">
                     <div class="banner banner--wide"></div>
@@ -152,7 +215,8 @@
                 <!-- End of banners -->
             </section>
 
-            <section class="container__row">
+            <section class="styletile__section container__row">
+                <h3 class="styletile__section-title">Inputs</h3>
                 <!-- Start of inputs -->
                 <form class="container__col-8 container__col-offset-2" action="">
                     <!-- Regular inputs -->
@@ -173,7 +237,8 @@
                 <!-- End of inputs -->
             </section>
 
-            <section class="container__row">
+            <section class="styletile__section container__row">
+                <h3 class="styletile__section-title">Comment card</h3>
                 <div class="comment container__col-12">
                     <div class="comment__header">
                         <div class="comment__header-author">
@@ -190,35 +255,28 @@
                     <p class="comment__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo eu velit gravida congue. In rhoncus nunc nec commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 </div>
             </section>
+
+            <section class="styletile__section container__row">
+                <h3 class="styletile__section-title">Icons</h3>
+                <div class="container__col-12">
+                    <i class="fa-regular fa-search"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-comment"></i> 
+                    <i class="fa-solid fa-pen"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-upload"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+            </section>
+
         </article>
     </main>
 </body>
 </html>
 
-Search : <i class="fa-regular fa-magnifying-glass"></i>
-heart outlined: <i class="fa-regular fa-heart"></i>
-heart filled: <i class="fa-solid fa-heart"></i>
-star outline: <i class="fa-regular fa-star"></i>
-star filled: <i class="fa-solid fa-star"></i>
-comment: <i class="fa-regular fa-comment"></i>
-comment filled: <i class="fa-solid fa-comment"></i>
-pen ikon: <i class="fa-solid fa-pen"></i>
-edit ikon: <i class="fa-solid fa-pen-to-square"></i>
-upload ikon: <i class="fa-solid fa-upload"></i>
-google ikon: <i class="fa-brands fa-google"></i>
-facebook ikon: <i class="fa-brands fa-facebook-f"></i>
-apple ikon: <i class="fa-brands fa-apple"></i>
-
-
-Fonts:
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap');
-    </style>
-    
-    font-family: 'Lobster', cursive;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Tiro Devanagari Sanskrit', serif;
