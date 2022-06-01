@@ -1,0 +1,91 @@
+.profile-page {
+    &__main-content {
+        margin-top: $spacing-l;
+    }
+    &__form {
+        @include for-small-tablet-up {
+            margin-right: $spacing-l;
+        }
+    }
+    &__hero {
+        position: relative;
+        min-height: 50vh;
+        background-image: url('../assets/images/home-page-hero-bg.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        @include flex-center-vertical-horizontal;
+        @include for-tablet-up {
+            min-height: 30vh;
+        }
+    }
+    &__hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include for-tablet-up {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__user-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto $spacing-l;
+        @include for-tablet-up {
+            margin: initial;
+        }
+    }
+    &__header-author {
+        display: flex;
+        align-items: center;
+    }
+    &__user-info {
+        padding-left: $spacing-s;
+    }
+    &__user-img-wrapper {
+        width: calc(#{$spacing-xxxl} * 2);
+        height: calc(#{$spacing-xxxl} * 2);
+        border-radius: 50%;
+        overflow: hidden;
+        @include flex-center-vertical-horizontal;
+    }
+    &__user-img {
+        
+    }
+    &__user-name {
+        font-size: $spacing-l;
+        font-weight: 400;
+        padding-bottom: $spacing-xxs;
+    }
+    &__user-member-since {
+        font-size: $spacing-m;
+    }
+
+    &__stats-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: $spacing-s $spacing-m;
+        background-color: $color-white;
+    }
+    &__stat {
+        padding: $spacing-s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__stat-value {
+        margin-bottom: $spacing-xs;
+        font-size: $spacing-l;
+        font-weight: 400;
+        text-align: center;
+    }
+    &__stat-title {
+        text-align: center;
+    }
+}
