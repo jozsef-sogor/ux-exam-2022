@@ -2,7 +2,7 @@
 @import 'abstracts/variables', 'abstracts/mixins';
 @import 'components/buttons', 'components/cards', 'components/tabs', 'components/tags', 'components/inputs', 'components/comments';
 @import 'layout/grid', 'layout/navbar.scss', 'layout/ad-banners.scss';
-@import 'pages/home', 'pages/recipie', 'pages/upload-recipie';
+@import 'pages/home', 'pages/recipie', 'pages/recipies.scss', 'pages/upload-recipie';
 
 main {
     padding-top: calc(#{$spacing-xxxl} * 1.5);

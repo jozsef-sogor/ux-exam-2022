@@ -8,7 +8,7 @@
         background-position: bottom center;
         @include flex-center-vertical-horizontal;
         @include for-tablet-up {
-            min-height: 20vh;
+            min-height: 30vh;
         }
     }
     &__hero-content {
