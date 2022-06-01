@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/drawer.js"></script>
 </head>
 <body>
     <div class="container container--fluid">
@@ -65,16 +66,19 @@
         <div class="container">
             <div class="container__row">
                 <section class="container__col-12 container__col-lg-8">
-                    <div class="recipies-page__sorting-header container__row">
-                        <p class="recipies-page__results-number container__col-6">56 results</p>
+                    <div class="recipies-page__sorting-header">
+                        <p class="recipies-page__results-number">56 results</p>
 
-                        <div class="recipies-page__sort-by-wrapper  container__col-6">
+                        <div class="recipies-page__sort-by-wrapper">
                             <label for="sort-by-dropdown" class="recipies-page__sort-label">Sort by:</label>
                             <select name="sort_by" id="sort-by-dropdown" class="recipies-page__sort-dropdown">
                                 <option value="1">Newest first</option>
                                 <option value="2">Oldest first</option>
                                 <option value="3">Highest rated</option>
                             </select>
+                            <button id="detailed-search-open" class="button button--primary button--small hidden-lg-up">
+                                <i class="fas fa-filter"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -251,8 +255,9 @@
 
                 </section>
 
-                <aside id="detailed-search" class="container__col-12 container__col-lg-4">
-                    <form action="" class="recipies-page__detailed-search">
+                <aside id="detailed-search" class="recipies-page__detailed-search container__col-12 container__col-lg-4">
+                    <i id="detailed-search-close" class="fa-solid fa-xmark hidden-lg-up"></i>
+                    <form action="" class="recipies-page__detailed-search-form">
                         <h3 class="recipies-page__detailed-search-title">Filter results</h3>
                         <div class="recipies-page__filter-group">
                             <h4 class="recipies-page__filter-title">Difficulty</h4>
